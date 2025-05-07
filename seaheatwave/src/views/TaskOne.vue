@@ -133,9 +133,9 @@ export default defineComponent({
     // 初始化地图，设置 maxBounds 和初始缩放
     this.map = L.map('map-task1', {
       maxBounds: worldBounds, // 限制拖动范围
-      maxBoundsViscosity: 1.0, // 边界弹性（1.0 表示完全固定）
+      maxBoundsViscosity: 0.5, // 边界弹性（1.0 表示完全固定）
       worldCopyJump: false, // 禁用跨世界跳转
-      minZoom: 2, // 最小缩放级别，确保显示完整世界
+      minZoom: 1, // 最小缩放级别，确保显示完整世界
       maxZoom: 18, // 最大缩放级别
     }).setView([0, 0], 2) // 初始视角为中心点，缩放级别 2
 
